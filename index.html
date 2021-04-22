@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Intenta escapar!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+</head>
+
+<body>
+
+    <a href="/work.html" class="volver_inicio">
+        <h3>Return.</h3>
+    </a>
+
+    <button class="reproducir">Reproducir audio</button>
+
+    <h1>Intenta escapar!</h1>
+
+    <p id="inicio"></p>
+
+    <div id="result"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+    <div id="result4"></div>
+    <div id="result5"></div>
+    <div id="result6"></div>
+    <br>
+    <!-- gifs -->
+    <img src="https://media.tenor.co/images/ee9312e65b300f7fcfee5d05f62d56d7/tenor.gif" id="loseGif1">
+    <img src="http://reactiongifs.me/wp-content/uploads/2013/10/i-wingman-successfully-leonardo-dicaprio.gif" id="winGif" /> <!-- The gifs that are showing when lost/won -->
+
+    <!-- Primeras opciones -->
+    <div>
+        <button class="eleccion" id="a" onclick="Paso1('a')">Palpar las paredes</button>
+        <button class="eleccion" id="b" onclick="Paso1('b')">Palpar el suelo</button>
+        <button class="eleccion" id="c" onclick="Paso1('c')">Buscar si llevas algo encima</button>
+    </div>
+    <br>
+    <!-- Opción palpar el suelo -->
+    <div>
+        <button class="eleccion" id="b1" style="display: none" onclick="suelo('b1')">Encender la linterna</button>
+        <button class="eleccion" id="b2" style="display: none" onclick="suelo('b2')">No encender la linterna</button>
+        <button class="eleccion" id="b3" style="display: none" onclick="suelo('b3')">Mirar si tiene pilas</button>
+    </div>
+
+    <!-- Encender linterna -->
+    <div>
+        <button class="eleccion" id="b1_1" style="display: none" onclick="linterna('b1_1')">Ir detrás de la sombra</button>
+        <button class="eleccion" id="b1_2" style="display: none" onclick="linterna('b1_2')">Quedarse inmóvil del temor</button>
+        <button class="eleccion" id="b1_3" style="display: none" onclick="linterna('b1_3')">Huir hacia la otra dirección</button>
+    </div>
+
+    <!-- Si no se enciende la linterna el usuario muere -->
+
+
+    <!-- Opción encendedor -->
+
+    <div>
+        <button class="eleccion" id="c1" style="display: none" onclick="Encendedor('c1')">Encenderlo</button>
+        <button class="eleccion" id="c2" style="display: none" onclick="Encendedor('c2')">Guardarlo, puede que luego sea útil</button>
+    </div>
+
+    <!-- Encender encendedor -->
+
+    <img id="explosion" src="imagenes/explosion.jpg" style="display: none;">
+    <img id="attack" src="imagenes/homer.gif" style="display: none;">
+
+    <!-- Guardar encendedor -->
+
+
+    <!-- ir detrás de la sombra -->
+
+    <div>
+        <button class="eleccion" id="b1_1_1" style="display: none" onclick="detrasSombra('b1_1_1')">Te quedas a inspeccionar la habitación</button>
+    </div>
+
+    <!-- inspeccionar habitación -->
+
+
+    <!-- Otra direccion -->
+    <div>
+        <button class="eleccion" id="b1_1_2_1" style="display: none" onclick="Huir('b1_1_2_1')">Abrir la puerta negra</button>
+        <button class="eleccion" id="b1_1_2_2" style="display: none" onclick="Huir('b1_1_2_2')">Abrir la puerta blanca</button>
+    </div>
+
+
+    <!-- Enlace a la hoja de javaScript externa -->
+    <script type="text/javascript" src="javascript.js"></script>
+    <script src="jscript.js" language="javascript" type="text/javascript"></script>
+</body>
+
+</html>
